@@ -1,0 +1,58 @@
+.features {
+  @include d-flex-column;
+  gap: $vertical-spacer;
+
+  .feature-box {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+
+    .feature-mask {
+      background-color: rgba(27, 164, 206, 0.6);
+      color: $color-neutral-100;
+      height: 100%;
+      display: none;
+      flex-direction: column;
+      gap: $vertical-spacer;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: $font-size-700;
+      }
+
+      h3 {
+        color: $color-neutral-100;
+      }
+    }
+
+    &:hover .feature-mask,
+    &:focus .feature-mask {
+      display: flex;
+    }
+  }
+
+  .feature-box-1 {
+    background-image: url("../img/services-bg-1.jpg");
+  }
+
+  .feature-box-2 {
+    background-image: url("../img/services-bg-2.jpg");
+  }
+
+  .feature-box-3 {
+    background-image: url("../img/services-bg-3.jpg");
+  }
+
+  .feature-box-4 {
+    background-image: url("../img/services-bg-4.jpg");
+  }
+}
+
+@media (min-width: $lg) {
+  .features {
+    flex-direction: row;
+    gap: 0;
+  }
+}

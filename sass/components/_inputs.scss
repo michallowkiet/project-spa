@@ -1,0 +1,74 @@
+input,
+select,
+textarea {
+  display: inline-block;
+  background-color: $color-primary;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  color: $color-neutral-100;
+  text-transform: uppercase;
+  padding: 0.25em 0;
+  width: 100%;
+}
+
+@media (min-width: $lg) {
+  input,
+  select {
+    width: 47%;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $color-neutral-100;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-weight: 300;
+}
+
+@media (min-width: $lg) {
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+textarea {
+  height: 100px;
+}
+
+select {
+  appearance: none;
+  background-image: url(../img/icons/arrow-down-white.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 1.2rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(../img/icons/calendar-white.svg);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background-image: url(../img/icons/clock-white.svg);
+}
+
+.error {
+  border-bottom: 1px solid red;
+}
+
+.errors {
+  font-size: $font-size-300;
+  color: $color-neutral-100;
+}

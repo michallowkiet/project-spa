@@ -1,0 +1,50 @@
+// -------------------
+//    Typography
+// -------------------
+// $base-font-size: 10px;
+
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Bellota", cursive;
+
+$font-size-100: 0.875rem; // 14px
+$font-size-200: 1rem; // 16px
+$font-size-300: 1.25rem; // 20px
+$font-size-400: 1.5rem; // 24px
+$font-size-500: 2.125rem; // 34px
+$font-size-700: 3rem; // 48px
+$font-size-800: 3.125rem; // 50PX
+
+// -------------------
+//    Colors
+// -------------------
+$color-primary: #1ba4ce;
+$color-secondary: #473452;
+$color-accent: #30383b;
+
+$color-neutral-100: #fff;
+$color-neutral-300: #888;
+$color-neutral-400: #555;
+
+// -------------------
+//    Container
+// -------------------
+
+$container-sm: 100%;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+
+// -------------------
+//    Breakpoints
+// -------------------
+$xs: 480px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// -------------------
+//    Mix
+// -------------------
+$box-shadow: 0 5px 20px #f0f0f0;
+$vertical-spacer: 1.5rem;

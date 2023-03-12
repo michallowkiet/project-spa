@@ -1,0 +1,112 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: calc($vertical-spacer + 2rem);
+  margin-top: 3rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc($vertical-spacer + 1rem);
+    padding: 1.5rem;
+    box-shadow: $box-shadow;
+
+    img {
+      align-self: stretch;
+    }
+
+    a {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .team-card {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 6rem;
+    }
+
+    .team-info {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 75%;
+
+      margin: 0 auto;
+      background-color: $color-neutral-100;
+      padding: 2.5rem 0;
+      bottom: -10%;
+      left: 12.5%;
+      right: 12.5%;
+      transition: all 0.3s linear;
+
+      .team-socials {
+        visibility: hidden;
+        opacity: 0;
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        transition: all 0.3s linear;
+
+        a {
+          color: $color-secondary;
+          font-size: $font-size-500;
+          text-decoration: none;
+
+          i {
+            display: flex;
+            width: 34px;
+            height: 34px;
+            justify-content: center;
+            align-items: center;
+            padding: 0.75em;
+            border: 1px solid $color-secondary;
+            border-radius: 50%;
+
+            &:hover {
+              background-color: $color-primary;
+              color: $color-neutral-100;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        bottom: 0;
+        box-shadow: $box-shadow;
+
+        .team-socials {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .card-container {
+    flex-direction: row;
+    gap: $vertical-spacer;
+
+    .team-card {
+      .team-info {
+        .team-socials {
+          a {
+            font-size: $font-size-400;
+          }
+        }
+      }
+    }
+  }
+}

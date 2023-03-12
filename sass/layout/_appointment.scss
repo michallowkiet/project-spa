@@ -1,0 +1,23 @@
+.appointment {
+  background-color: $color-primary;
+
+  @media (min-width: $lg) {
+    padding-block: 0;
+    margin-block: 4.5rem;
+    display: flex;
+    justify-content: flex-start;
+
+    .img {
+      width: 40%;
+      background-image: url("../img/contact-bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .form {
+      width: 60%;
+      padding: 5rem 4rem;
+    }
+  }
+}

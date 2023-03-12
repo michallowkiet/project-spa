@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-neutral-300;
+  font-size: $font-size-400;
+}
+
+@media (min-width: $lg) {
+  body {
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: max(450px, 37%);
+    font-size: $font-size-200;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-secondary;
+  margin-block: 0;
+}
+
+h1 {
+  font-size: $font-size-800;
+}
+
+h2 {
+  font-size: $font-size-700;
+  color: $color-secondary;
+}
+
+h3 {
+  font-size: $font-size-500;
+  color: $color-secondary;
+}
+
+@media (min-width: $lg) {
+  h3 {
+    font-size: $font-size-400;
+  }
+}
+
+p {
+  max-width: 800px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+i {
+  display: inline-block;
+}
+
+section,
+footer {
+  padding-block: 3.5rem;
+}
+
+@media (min-width: $lg) {
+  section,
+  footer {
+    padding-block: 4.5rem;
+  }
+}
+
+.subheading {
+  font-family: $font-secondary;
+  font-size: $font-size-400;
+  color: $color-secondary;
+  margin: 0;
+}
+
+.container {
+  max-width: $container-sm;
+  width: $container-sm;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: $sm) {
+  .container {
+    max-width: $container-sm;
+  }
+}
+
+@media (min-width: $md) {
+  .container {
+    max-width: $container-md;
+  }
+}
+
+@media (min-width: $lg) {
+  .container {
+    max-width: $container-lg;
+  }
+}
+
+@media (min-width: $xl) {
+  .container {
+    max-width: $container-xl;
+  }
+}

@@ -1,0 +1,67 @@
+%btn {
+  display: inline-block;
+  font-size: $font-size-200;
+  text-decoration: none;
+  color: $color-neutral-100;
+  background-color: $color-primary;
+  padding: 1em 2em;
+
+  i {
+    display: none;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  padding-inline: 3em;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-hero:hover {
+  background-color: $color-accent;
+}
+
+.btn--accent {
+  background-color: $color-accent;
+}
+
+.btn--accent:hover {
+  background-color: $color-primary;
+}
+
+.btn-form {
+  background-color: $color-neutral-100;
+  color: #000;
+  font-weight: 700;
+
+  border: none;
+}
+
+.btn-form:hover {
+  background-color: $color-accent;
+  color: $color-neutral-100;
+}
+
+.btn-hero {
+  @extend %btn;
+}
+
+.btn-watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+  font-size: $font-size-200;
+  text-decoration: none;
+  i {
+    color: $color-secondary;
+    font-size: $font-size-500;
+  }
+}
+
+.btn-watch:hover {
+  color: $color-primary;
+}
